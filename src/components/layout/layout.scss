@@ -1,0 +1,72 @@
+.navbar-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    align-items: center;
+    /* From https://css.glass */
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+backdrop-filter: blur(20px);
+-webkit-backdrop-filter: blur(20px);
+h2{
+    font-size: 25px;
+}
+}
+.sidebar-container{
+    height: 100vh;
+    padding: 10px 20px;
+    /* From https://css.glass */
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+backdrop-filter: blur(20px);
+-webkit-backdrop-filter: blur(20px);
+    Button{
+        height: 50px;
+        gap: 20px;
+        border: 1px solid rgba(139, 139, 139, 0.192);
+    }
+    .buttons-container{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+/* Extra small devices (phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .navbar-container{
+        padding: 5px 20px;
+        h2{
+            font-size: 20px;
+        }
+    }
+    .sidebar-container{
+        padding: 5px;
+        p{
+            display: none;
+        }
+    }
+  }
+  
+  /* Small devices (landscape phones, 576px and up) */
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    .navbar-container{
+        background-color: green;
+        h2{
+            display: none;
+        }
+    }
+  }
+  
+  /* Medium devices (tablets, 768px and up) */
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    /* CSS rules here */
+  }
+  
+  /* Large devices (desktops, 992px and up) */
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    /* CSS rules here */
+  }
+  
+  /* Extra large devices (large desktops, 1200px and up) */
+  @media (min-width: 1200px) {
+    /* CSS rules here */
+  }
+  
